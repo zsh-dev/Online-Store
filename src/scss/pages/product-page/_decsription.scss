@@ -1,0 +1,32 @@
+.description {
+    padding: 100px 0 50px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 436px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 60px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__video {
+        max-width: 560px;
+        height: 315px;
+        position: relative;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

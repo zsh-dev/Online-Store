@@ -1,0 +1,14 @@
+.catalog {
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        gap: 24px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+    }
+}

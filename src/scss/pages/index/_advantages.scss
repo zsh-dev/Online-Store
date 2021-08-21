@@ -1,0 +1,32 @@
+.advantages {
+    padding-bottom: 120px;
+    background-color: #F9F9F9;
+    &__title {
+        max-width: 808px;
+        margin-bottom: 60px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        row-gap: 40px;
+    }
+    &__item {
+       position: relative;
+       padding-left: 45px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../icons/marker.svg);
+            width: 26px;
+            height: 26px;
+        }
+    }
+    &__text {
+        font-size: 18px;
+line-height: 27px;
+color: rgba(0, 0, 0, 0.8);
+    }
+}

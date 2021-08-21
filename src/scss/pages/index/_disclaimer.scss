@@ -1,0 +1,23 @@
+.disclaimer {
+    &__inner {
+        display: flex;
+        justify-content: center;
+
+        padding: 70px 15px;
+        border-radius: 6px;
+        background: center center/cover no-repeat;
+    }
+
+    &__title {
+        max-width: 315px;
+        margin-right: 100px;
+    }
+
+    &__text {
+        max-width: 600px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+  
+
+}

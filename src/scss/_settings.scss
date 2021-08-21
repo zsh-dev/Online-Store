@@ -1,0 +1,50 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+}
+.container {
+    max-width: 1255px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.link {
+    color: inherit;
+    transition: color .5s;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+.page-section {
+    padding: 60px 0;
+}
+.lock {
+    overflow: hidden;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+    z-index: 2;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.padding {
+    padding-right: 17px;
+}

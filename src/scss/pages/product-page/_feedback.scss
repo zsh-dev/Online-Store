@@ -1,0 +1,62 @@
+.feedback {
+    padding: 50px 0 60px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        max-width: 704px;
+    }
+
+    &__item {
+        padding-bottom: 20px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #E9E9E9;
+            margin-bottom: 20px;
+        }
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+
+        &-rating {
+            margin-right: 24px;
+        }
+
+        &-star {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../icons/star.svg) center center/cover no-repeat;
+
+            &.active {
+                background-image: url(../icons/star-active.svg);
+            }
+        }
+
+        &-name {
+            color: #000;
+        }
+    }
+
+    &__date {
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__text {
+        line-height: 24px;
+
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+}

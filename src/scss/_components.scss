@@ -1,0 +1,424 @@
+.btn {
+    height: 46px;
+    background-color: #FFA621;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color .5s;
+
+    &:hover {
+        background-color: #FFB341;
+    }
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 46px;
+    height: 46px;
+    border-radius: 6px;
+    border: none;
+    background: url(../icons/cross.svg) center center no-repeat;
+    background-color: rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    &_size_14 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &_size_16 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &_size_18 {
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+
+    &_size_20 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    &_size_24 {
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
+
+    &_orange {
+        color: #FFA621;
+    }
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E9E9E9;
+    border-radius: 8px;
+    transition: background-color .5s;
+
+    path {
+        transition: fill .3s;
+    }
+
+    &_fb:hover {
+        background-color: #4267B2;
+
+        path {
+            fill: #FFFFFF;
+        }
+    }
+
+    &_vk:hover {
+        background-color: #5181B8;
+
+        path {
+            fill: #FFFFFF;
+        }
+    }
+
+    &_yt:hover {
+        background-color: #FF0000;
+
+        path {
+            fill: #FFFFFF;
+        }
+    }
+
+    &_insta {
+        svg {
+            border-radius: 5px;
+        }
+
+        &:hover {
+            background: linear-gradient(223.21deg, #CA38A6 6.73%, #E94868 34.53%, #FF9148 64.25%, #FFD854 93.4%);
+
+            path {
+
+                fill: #FFFFFF;
+            }
+        }
+
+    }
+
+}
+
+.card {
+    position: relative;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    border-radius: 6px;
+    transition: box-shadow .5s;
+
+    &:hover {
+        box-shadow: 3px 3px 20px #FFA621;
+    }
+
+    &_discount {
+        &::before {
+            content: 'скидка';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background: #999999;
+            border-radius: 4px;
+            padding: 4px 6px;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 20px;
+        width: 46px;
+        height: 46px;
+        background-color: rgba(0, 0, 0, 0.02);
+        border-radius: 6px;
+        border: none;
+        z-index: 2;
+        cursor: pointer;
+        transition: .5s;
+        padding: 0;
+    }
+
+    &__btn-favorite {
+        top: 20px;
+        background-image: url(../icons/favorite.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        &:hover {
+            background-image: url(../icons/favorite-hover.svg);
+        }
+
+        &.active {
+            background-image: url(../icons/favorite-active.svg);
+        }
+    }
+
+    &__btn-basket {
+        bottom: 20px;
+        background-color: #FFA621;
+        background-image: url(../icons/basket.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        &:hover {
+            background-color: #FFB341;
+        }
+
+        &.active {
+            background-color: #FF8C21;
+        }
+    }
+
+    &__img {
+        position: relative;
+        height: 248px;
+        margin-bottom: 20px;
+
+        img {
+            position: absolute;
+            max-height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        text-transform: none;
+    }
+
+    &__type {
+        flex: 1 1 auto;
+        margin-bottom: 65px;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.4);
+
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #000000;
+
+        &_old {
+            text-decoration: line-through;
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration-line: line-through;
+            color: #999999;
+            margin-bottom: 8px;
+        }
+
+        &_new {
+            color: #FF0000;
+        }
+    }
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    transition: box-shadow .5s;
+
+    &:hover {
+        box-shadow: 3px 3px 20px #FFA621;
+    }
+
+    &__img {
+
+        margin-bottom: 20px;
+        height: 220px;
+
+        img {
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__content {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 20px;
+    }
+
+    &__title {
+        flex: 1 0 auto;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 50px;
+    }
+
+    &__type {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #FFA621;
+        margin-right: 20px;
+    }
+
+    &__date {
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.6);
+
+    }
+}
+
+.burger {
+    display: none;
+    width: 46px;
+    height: 46px;
+    background-color: #FFA621;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+
+    span {
+        width: 16px;
+        height: 2px;
+        margin-bottom: 3px;
+        background-color: #FFFFFF;
+        border-radius: 2px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.checkbox-btn {
+    display: block;
+
+    position: relative;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url(../icons/ok.svg) no-repeat center center;
+        background-color: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 6px;
+        transition: border-color .5s;
+
+    }
+
+    &:hover {
+        &::before {
+            border-color: #FFA621;
+        }
+    }
+
+    &.active {
+        color: #000;
+
+        &::before {
+
+            background-color: #FFA621;
+            border: none;
+        }
+    }
+}
+
+.radio-btn {
+    position: relative;
+    
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 26px;
+
+    user-select: none;
+    transition: .5s;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-color: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 10px;
+        transition: .5s;
+    }
+
+    &:hover {
+        &::before {
+            border-color: #FFA621;
+        }
+    }
+
+    &.active {
+        color: #000000;
+
+        &::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5px;
+            background-color: #FFA621;
+            border-radius: 10px;
+
+        }
+    }
+}

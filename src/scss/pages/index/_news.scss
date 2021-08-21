@@ -1,0 +1,23 @@
+.news {
+    background-color: #F9F9F9;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__cards {
+        display: flex;
+    }
+
+    &__card {
+        flex-basis: 33.333%;
+
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+}

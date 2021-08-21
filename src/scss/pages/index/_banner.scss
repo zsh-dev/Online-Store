@@ -1,0 +1,131 @@
+.banner {
+    padding: 30px 0;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+        padding: 0 15px;
+    }
+
+    &__descr {}
+
+    &__subtitle {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFA621;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        max-width: 322px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 58px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+
+    
+
+    &__text {
+        max-width: 392px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 30px;
+        transition:color .5s;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+    }
+
+    &__price {
+        max-width: 150px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #FFFFFF;
+        margin-right: 70px;
+        transition:color .5s;
+    }
+
+    &__btn {
+        position: relative;
+        padding-left: 52px;
+        padding-right: 16px;
+        z-index: 2;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            background-image: url(../icons/basket.svg);
+            width: 22px;
+            height: 22px;
+
+        }
+    }
+
+    &__img {
+        img {
+            transform: rotate(10.39deg);
+        }
+        
+    }
+    .swiper-slide {
+    position: relative;
+    padding: 80px 0 112px;
+    background: linear-gradient(0deg, rgba(35, 40, 46, 0.8), rgba(35, 40, 46, 0.8)), linear-gradient(270deg, #2B2F34 17.32%, #3D4248 59.78%, rgba(55, 62, 71, 0.86) 77.12%, #3E434A 96.46%), url(mockaroon-YqUeLG7fMr4-unsplash.jpg);
+    background-blend-mode: normal, hard-light, normal;
+    border-radius: 6px;
+
+    
+}
+.swiper__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    transition: background-color .5s;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    &_prev {
+        background-image: url(../icons/arrow-prev.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        left: 48px;
+    }
+    &_next {
+        background-image: url(../icons/arrow-next.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        right: 48px;
+    }
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 30px;
+}
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.2);
+    &-active {
+        background-color: #FFFFFF;
+    }
+}
+}
+

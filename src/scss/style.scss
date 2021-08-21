@@ -1,0 +1,39 @@
+@import 'base/mixins';
+@import 'base/variables';
+@import 'libs/minireset.min';
+@import 'libs/swiper-bundle.min';
+@import 'libs/nouislider.min';
+
+
+
+
+
+@import 'settings';
+@import 'components';
+
+@import 'pages/header';
+
+@import 'pages/index/banner';
+@import 'pages/catalog';
+@import 'pages/index/category';
+@import 'pages/index/disclaimer';
+@import 'pages/index/news';
+@import 'pages/index/advantages';
+@import 'pages/index/text';
+
+@import 'pages/catalog/products';
+
+@import 'pages/product-page/breadcrumbs';
+@import 'pages/product-page/product';
+@import 'pages/product-page/complect';
+@import 'pages/product-page/decsription';
+@import 'pages/product-page/feedback';
+
+
+@import 'pages/modal';
+
+
+
+@import 'pages/footer';
+@import 'media';
+

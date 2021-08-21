@@ -1,0 +1,26 @@
+.text {
+    padding: 100px 0;
+    &__inner {
+        display: flex;
+    }
+    &__usage {
+        margin-right: 128px;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__descr {
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        &_black {
+            font-weight: 700;
+            color: #000;
+        }
+        &_orange {
+            color: #FFA621;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
