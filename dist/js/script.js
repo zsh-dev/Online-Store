@@ -128,7 +128,7 @@ const overlay = document.querySelector('.overlay');
  
 
 const burgerBtn = document.querySelector('.burger'),
-      btnCloseMenu = document.querySelector('.btn-close[data-close="Menu close"]'),
+      btnCloseMenu = document.querySelector('.btn-close[data-close-menu]'),
   mobileMenu = document.querySelector('.header__mobile')
 if (burgerBtn) {
   burgerBtn.addEventListener('click', () => {
@@ -388,9 +388,9 @@ if (inputCount) {
     
 
       
-      // function alertWarn() {
-      //   alert('ВНИМАНИЕ! Данный сайт не является коммерческим и вся продукция в ней ненастоящая. И все совпадения случайны. Сайт создан сугубо в личных целях')
-      // }
+      function alertWarn() {
+        alert('ВНИМАНИЕ! Данный сайт не является коммерческим и вся продукция в ней ненастоящая. И все совпадения случайны. Сайт создан сугубо в личных целях')
+      }
       
-      // setTimeout(alertWarn, 2000);
+      setTimeout(alertWarn, 2000);
 
