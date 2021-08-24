@@ -152,6 +152,12 @@
             border-radius: 4px;
             padding: 4px 6px;
         }
+        .card__price {
+            display: none;
+            &_new, &_old {
+                display: block;
+            }
+        }
     }
 
     &__btn {
@@ -227,6 +233,10 @@
         color: rgba(0, 0, 0, 0.4);
 
     }
+    &__prices {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__price {
         font-weight: bold;
@@ -236,7 +246,7 @@
         color: #000000;
 
         &_old {
-            text-decoration: line-through;
+            display: none;
             font-size: 14px;
             line-height: 17px;
             text-decoration-line: line-through;
@@ -245,6 +255,7 @@
         }
 
         &_new {
+            display: none;
             color: #FF0000;
         }
     }

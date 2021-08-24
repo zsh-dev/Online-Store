@@ -120,6 +120,12 @@ document.addEventListener('click', ({target}) => {
   } else {
     document.querySelector('.header__catalog-list').classList.remove('active');
   }
+  if (target.classList.contains('products__sort-btn')) {
+    document.querySelector('.products__sort-items').classList.toggle('active');
+  } else {
+    document.querySelector('.products__sort-items').classList.remove('active');
+  }
+ 
 })
 
 
@@ -171,25 +177,29 @@ if (cardBtns) {
 }
 
 
-const sortItems = document.querySelector('.products__sort-items');
+
 const sortRadioBtns = document.querySelectorAll('.radio-btn'),
   sortBtn = document.querySelector('.products__sort-btn');
 if (sortRadioBtns) {
   sortRadioBtns.forEach((item) => {
+    if (item.firstElementChild.checked) {
+      item.classList.add('active');
+      sortBtn.textContent = item.textContent;
+    } else if (!item.firstElementChild.checked) {
+      item.classList.remove('active');
+    }
+
   item.addEventListener('click', ({target}) => {
     sortRadioBtns.forEach(el => {
       el.classList.remove('active');
     });
+    
     item.classList.add('active');
     sortBtn.textContent = item.textContent;
   })
 })
 }
-if (sortBtn) {
-  sortBtn.addEventListener('click', () => {
-    toggleCLass(sortBtn, sortItems);
-})
-}
+
 
 
 
@@ -242,6 +252,11 @@ if (inputs) {
 const checkbox = document.querySelectorAll('.checkbox-btn');
 if (checkbox) {
   checkbox.forEach((item) => {
+    if (item.firstElementChild.checked) {
+      item.classList.add('active');
+    } else if (!item.firstElementChild.checked) {
+      item.classList.remove('active');
+    }
   item.addEventListener('click', ({target}) => {
     target.classList.toggle('active');
   })
