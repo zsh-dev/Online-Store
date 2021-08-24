@@ -162,8 +162,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: relative;
-            z-index: 10;
         }
 
         &__info {
@@ -173,18 +171,7 @@
         &__mobile {
             display: block;
 
-            &.active {
-                &::before {
-                    content: '';
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 95px;
-                    background-color: #fff;
-                    z-index: 10;
-                }
-            }
+       
 
             .header__profile,
             .header__footer,
@@ -615,11 +602,7 @@
 
 
         &__mobile {
-            &.active {
-                &::before {
-                    height: 84px;
-                }
-            }
+         
 
             .header__contact-wrap {
                 margin-bottom: 30px;

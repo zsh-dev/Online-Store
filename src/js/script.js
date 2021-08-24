@@ -128,17 +128,20 @@ const overlay = document.querySelector('.overlay');
  
 
 const burgerBtn = document.querySelector('.burger'),
+      btnCloseMenu = document.querySelector('.btn-close[data-close="Menu close"]'),
   mobileMenu = document.querySelector('.header__mobile')
 if (burgerBtn) {
   burgerBtn.addEventListener('click', () => {
-    toggleCLass(burgerBtn, mobileMenu);
-    if (mobileMenu.classList.contains('active')) {
-      document.body.classList.add('lock');
-    } else {
-      document.body.classList.remove('lock');
-    }
+    mobileMenu.classList.add('active')
+    document.body.classList.add('lock');
     
-    
+})
+}
+
+if (btnCloseMenu) {
+  btnCloseMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('active')
+    document.body.classList.remove('lock');
 })
 }
 
