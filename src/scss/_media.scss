@@ -42,7 +42,7 @@
         }
     }
 
-  
+
 
     .category {
         &__list {
@@ -62,7 +62,7 @@
             flex-grow: 1;
         }
 
-     
+
 
     }
 
@@ -162,6 +162,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+            z-index: 10;
         }
 
         &__info {
@@ -171,14 +173,27 @@
         &__mobile {
             display: block;
 
-            
+            &.active {
+                &::before {
+                    content: '';
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 95px;
+                    background-color: #fff;
+                    z-index: 10;
+                }
+            }
+
             .header__profile,
             .header__footer,
             .header__contact-wrap {
                 display: block;
             }
 
-            .header__socials, .header__form {
+            .header__socials,
+            .header__form {
                 display: flex;
             }
 
@@ -214,13 +229,14 @@
 
         &__price {
             margin-right: 20px;
-        } 
+        }
+
         .swiper-slide {
-        border-radius: 0;
-    }
+            border-radius: 0;
+        }
     }
 
-   
+
 
     .swiper__btn {
         display: none;
@@ -231,7 +247,7 @@
             margin-bottom: 30px;
         }
 
-    
+
     }
 
     .card {
@@ -589,13 +605,21 @@
         &__link-count {
             display: none;
         }
+
         &__form-btn {
             font-size: 0;
             padding-left: 35px;
         }
 
+
+
+
         &__mobile {
-            top: 84px;
+            &.active {
+                &::before {
+                    height: 84px;
+                }
+            }
 
             .header__contact-wrap {
                 margin-bottom: 30px;
@@ -644,7 +668,7 @@
 
     }
 
-    
+
 
     .category {
         &__list {
@@ -705,14 +729,14 @@
             margin-right: 10px;
             margin-bottom: 30px;
 
-            
+
         }
 
         &__sort-form {
             align-self: stretch;
         }
 
-       
+
 
         &__pagination {
             &-link {
@@ -729,10 +753,12 @@
                 width: 45%;
             }
         }
+
         &__btn-usage {
             margin-right: 15px;
             line-height: 19px;
         }
+
         &__btn-reset {
             padding-right: 5px;
         }
@@ -853,22 +879,24 @@
     }
 
     .modal {
-      
+
         &__content {
             max-width: 100%;
             height: 100%;
             border-radius: 0;
             padding: 22px 16px;
         }
+
         &__text {
             font-size: 14px;
-line-height: 21px;
-margin-bottom: 20px;
+            line-height: 21px;
+            margin-bottom: 20px;
         }
+
         &__btn {
             width: 100%;
         }
-        
+
     }
 
     .footer {
