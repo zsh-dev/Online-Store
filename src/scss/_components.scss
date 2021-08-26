@@ -206,16 +206,15 @@
     }
 
     &__img {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
         height: 248px;
         margin-bottom: 20px;
 
         img {
-            position: absolute;
             max-height: 100%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             object-fit: cover;
         }
     }
