@@ -329,7 +329,7 @@
     flex-direction: column;
     border: none;
     padding: 0;
-
+    flex-shrink: 0;
     span {
         width: 16px;
         height: 2px;

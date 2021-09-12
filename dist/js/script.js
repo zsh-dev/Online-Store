@@ -436,10 +436,3 @@ function maskPhone(selector, masked = '+7 (___) ___-__-__') {
 }
 maskPhone('.modal__number', '+7 (___) ___-__-__');
 
-
-
-function alertWarn() {
-  alert('ВНИМАНИЕ! Данный сайт не является коммерческим и вся продукция в ней ненастоящая. И все совпадения случайны. Сайт создан сугубо в личных целях')
-}
-
-setTimeout(alertWarn, 2000);
