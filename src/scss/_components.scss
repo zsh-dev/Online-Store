@@ -172,6 +172,7 @@
         cursor: pointer;
         transition: .5s;
         padding: 0;
+        will-change: background-image;
     }
 
     &__btn-favorite {
