@@ -134,19 +134,26 @@
                             <li class="header__catalog-item"><a href="#" class="header__catalog-link">Тюнинг</a></li>
                         </ul>
                     </div>
-                    <form action="#" class="header__form">
+                    <form action="#" class="search-form header__form">
                         <input type="text" name="search" placeholder="Введите название товара или артикул"
-                            class="header__form-input">
-                        <button class="btn header__form-btn">Найти</button>
+                            class="search-form__input">
+                        <button class="btn search-form__btn">Найти</button>
                     </form>
                     <a href="#" class="header__link">
-                        <div class="header__link-item header__link-item_favorite">
+                        <div class="header__link-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                            </svg>
                             <p class="header__link-count header__favorite">0</p>
                         </div>
                         Избранное
                     </a>
                     <a href="#" class="header__link">
-                        <div class="header__link-item header__link-item_basket">
+                        <div class="header__link-item">
+                            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.0961 4.5892H3.89479L3.6391 1.74072C3.59728 1.2749 3.20688 0.917969 2.73921 0.917969H0.903503C0.404511 0.917969 0 1.32248 0 1.82147C0 2.32046 0.404511 2.72497 0.903503 2.72497H1.91319C2.46497 8.87232 1.0389 -7.0163 2.95235 14.3022C3.02609 15.1367 3.47694 16.0421 4.25361 16.6573C2.85331 18.4456 4.13275 21.0819 6.41057 21.0819C8.30113 21.0819 9.63457 19.1963 8.98624 17.4105H13.9312C13.2837 19.194 14.6143 21.0819 16.5069 21.0819C18.0173 21.0819 19.2461 19.8531 19.2461 18.3427C19.2461 16.8323 18.0173 15.6035 16.5069 15.6035H6.41668C5.73036 15.6035 5.13229 15.1894 4.87414 14.5861L19.3133 13.7375C19.7075 13.7144 20.041 13.4378 20.1368 13.0547L21.9727 5.71183C22.115 5.14245 21.684 4.5892 21.0961 4.5892ZM6.41057 19.2749C5.89661 19.2749 5.47841 18.8567 5.47841 18.3427C5.47841 17.8287 5.89661 17.4105 6.41057 17.4105C6.92458 17.4105 7.34277 17.8287 7.34277 18.3427C7.34277 18.8567 6.92458 19.2749 6.41057 19.2749ZM16.5069 19.2749C15.9929 19.2749 15.5747 18.8567 15.5747 18.3427C15.5747 17.8287 15.9929 17.4105 16.5069 17.4105C17.0209 17.4105 17.4391 17.8287 17.4391 18.3427C17.4391 18.8567 17.0209 19.2749 16.5069 19.2749ZM18.5447 11.9726L4.63093 12.7903L4.05699 6.39617H19.9389L18.5447 11.9726Z"/>
+                                </svg>
                             <p class="header__link-count header__basket">0</p>
                         </div>
 
@@ -156,43 +163,44 @@
 
 
             </div>
-            <div class="header__mobile">
-                <button class="btn-close" data-close-menu=""></button>
-                <div class="header__mobile-wrap">
-                    <form action="#" class="header__form header__mobile-form">
-                        <input type="text" name="search" placeholder="Введите название товара или артикул"
-                            class="header__form-input">
-                        <button class="btn header__form-btn">Найти</button>
-                    </form>
-                </div>
-                <div class="header__mobile-content"> 
-                    <div class="header__mobile-first">
-                <button class="header__mobile-btn header__mobile-btn_next">Каталог</button>
-                
-                   
-                <nav class="header__menu header__mobile-menu">
-                    <ul class="header__menu-list header__mobile-list">
-                        <li class="header__mobile-item"><a href="#"
-                                class="header__menu-link header__mobile-link">Мастерская</a></li>
-                        <li class="header__mobile-item"><a href="#"
-                                class="header__menu-link header__mobile-link">Обучение</a></li>
-                        <li class="header__mobile-item"><a href="#"
-                                class="header__menu-link header__mobile-link">Правовые вопросы</a></li>
-                        <li class="header__mobile-item"><a href="#"
-                                class="header__menu-link header__mobile-link">Оптовикам</a></li>
-                        <li class="header__mobile-item"><a href="#"
-                                class="header__menu-link header__mobile-link">Гарантии</a></li>
-                        <li class="header__mobile-item"><a href="#"
-                                class="header__menu-link header__mobile-link">Доставка</a></li>
-                        <li class="header__mobile-item"><a href="#"
-                                class="header__menu-link header__mobile-link">Контакты</a></li>
+        </div>
+
+        <div class="header-mobile">
+            <button class="btn-close" data-close-menu=""></button>
+            <div class="header-mobile__wrap">
+                <form action="#" class="search-form header-mobile__form">
+                    <input type="text" name="search" placeholder="Введите название товара или артикул"
+                        class="search-form__input">
+                    <button class="btn search-form__btn">Найти</button>
+                </form>
+            </div>
+            <div class="header-mobile__first">
+                <button class="header-mobile__btn header-mobile__btn_next">Каталог</button>
+
+
+                <nav class="header__menu header-mobile__menu">
+                    <ul class="header__menu-list header-mobile__list">
+                        <li class="header-mobile__item"><a href="#"
+                                class="header__menu-link header-mobile__link">Мастерская</a></li>
+                        <li class="header-mobile__item"><a href="#"
+                                class="header__menu-link header-mobile__link">Обучение</a></li>
+                        <li class="header-mobile__item"><a href="#"
+                                class="header__menu-link header-mobile__link">Правовые вопросы</a></li>
+                        <li class="header-mobile__item"><a href="#"
+                                class="header__menu-link header-mobile__link">Оптовикам</a></li>
+                        <li class="header-mobile__item"><a href="#"
+                                class="header__menu-link header-mobile__link">Гарантии</a></li>
+                        <li class="header-mobile__item"><a href="#"
+                                class="header__menu-link header-mobile__link">Доставка</a></li>
+                        <li class="header-mobile__item"><a href="#"
+                                class="header__menu-link header-mobile__link">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="header__profile header__mobile-profile">
+                <div class="header__profile header-mobile__profile">
                     <a href="#" class="header__profile-link">Войти</a>
                     <a href="#" class="header__profile-link">Зарегистрироваться</a>
                 </div>
-                <div class="header__mobile-footer">
+                <div class="header-mobile__footer">
                     <div class="header__contact-wrap">
                         <a href="tel:+70000000000" class="header__contact">+7 000 000 00 00</a>
                         <button class="header__contact-btn">Заказать звонок</button>
@@ -263,10 +271,10 @@
                     </div>
                 </div>
             </div>
-            <div class="header__mobile-catalog">
-                <button class="header__mobile-btn header__mobile-btn_prev">Каталог</button>
+            <div class="header-mobile__catalog">
+                <button class="header-mobile__btn header-mobile__btn_prev">Каталог</button>
                 <ul class="header__catalog-list header__catalog-list_mobile">
-                    
+
                     <li class="header__catalog-item"><a href="#" class="header__catalog-link">Охолощенное оружие
                             и макеты</a></li>
                     <li class="header__catalog-item"><a href="#" class="header__catalog-link">Патроны, пули,
@@ -285,12 +293,9 @@
                     <li class="header__catalog-item"><a href="#" class="header__catalog-link">Тюнинг</a></li>
                 </ul>
             </div>
-            </div>
-            
-            </div>
+
+
         </div>
-
-
 
 
     </header>
@@ -314,28 +319,28 @@
                     <div class="product__slider-nav">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                
-                                    <img class="" src="img/pistol.png" alt="">
-                         
+
+                                <img class="" src="img/pistol.png" alt="">
+
                             </div>
                             <div class="swiper-slide">
-                               
-                                    <img class="" src="img/pistol.png" alt="">
-                              
+
+                                <img class="" src="img/pistol.png" alt="">
+
                             </div>
                             <div class="swiper-slide">
-                              
-                                    <img class="" src="img/pistol.png" alt="">
-                           
+
+                                <img class="" src="img/pistol.png" alt="">
+
                             </div>
                             <div class="swiper-slide">
-                            
-                                    <img class="" src="img/pistol.png" alt="">
+
+                                <img class="" src="img/pistol.png" alt="">
                             </div>
                             <div class="swiper-slide">
-                               
-                                    <img class="" src="img/pistol.png" alt="">
-                              
+
+                                <img class="" src="img/pistol.png" alt="">
+
                             </div>
 
                         </div>
@@ -360,42 +365,50 @@
                 </div>
                 <div class="product__description">
                     <div class="product__descr">
-                    <h2 class="title product__title">Beretta 92 Mod 92 Retay</h2>
-                    <button class="product__btn-favorite">Добавить товар в избранное</button>
-                    <div class="product__info">
-                        <div class="product__info-wrap">
-                            <p class="product__info-name">Артикул</p>
+                        <h2 class="title product__title">Beretta 92 Mod 92 Retay</h2>
+                        <button class="product__btn-favorite">Добавить товар в избранное</button>
+                        <div class="product__info">
+                            <div class="product__info-wrap">
+                                <p class="product__info-name">Артикул</p>
 
-                            <p class="product__info-text">20-34-80</p>
-                        </div>
-                        <div class="product__info-wrap">
-                            <p class="product__info-name">Тип</p>
-                            <p class="product__info-text">СХП</p>
-                        </div>
-                        <div class="product__info-wrap">
-                            <p class="product__info-name">Вид</p>
-                            <p class="product__info-text">Новодельные</p>
-                        </div>
-                        <div class="product__info-wrap">
-                            <p class="product__info-name">Производитель</p>
-                            <p class="product__info-text">Курс-С</p>
+                                <p class="product__info-text">20-34-80</p>
+                            </div>
+                            <div class="product__info-wrap">
+                                <p class="product__info-name">Тип</p>
+                                <p class="product__info-text">СХП</p>
+                            </div>
+                            <div class="product__info-wrap">
+                                <p class="product__info-name">Вид</p>
+                                <p class="product__info-text">Новодельные</p>
+                            </div>
+                            <div class="product__info-wrap">
+                                <p class="product__info-name">Производитель</p>
+                                <p class="product__info-text">Курс-С</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                     <form class="product__form">
                         <div class="product__form-wrap">
-                            <label class="checkbox-btn product__form-label">Добавить резьбу
-                                <input type="checkbox" class="product__form-input">
+                            <label class="check product__form-label">
+                                <input type="checkbox" class="check__input" name="check">
+                                <span class="check__box"></span>
+                                <span class="check__text">Добавить резьбу</span>
                             </label>
-                            <label class="checkbox-btn product__form-label">Добавить карбонитрацию
-                                <input type="checkbox" class="product__form-input">
+                            <label class="check product__form-label">
+                                <input type="checkbox" class="check__input" name="check">
+                                <span class="check__box"></span>
+                                <span class="check__text">Добавить карбонитрацию</span>
                             </label>
-                            <label class="checkbox-btn product__form-label margin">Гравировка
-                                <input type="checkbox" class="product__form-input">
+                            <label class="check product__form-label margin">
+                                <input type="checkbox" class="check__input" name="check">
+                                <span class="check__box"></span>
+                                <span class="check__text">Гравировка</span>
                             </label>
                             <p class="product__form-text">Менеджер уточнит ваши пожелания по гравировке</p>
-                            <label class="checkbox-btn product__form-label">Нужна гарантия на 1 год
-                                <input type="checkbox" class="product__form-input">
+                            <label class="check product__form-label">
+                                <input type="checkbox" class="check__input" name="check">
+                                <span class="check__box"></span>
+                                <span class="check__text">Нужна гарантия на 1 год</span>
                             </label>
                         </div>
                     </form>
@@ -431,226 +444,399 @@
         <div class="container">
             <h2 class="title complect__title">Добавить в комплект</h2>
             <div class="complect__wrapper">
-            <div class="swiper-container complect__slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
+                <div class="swiper-container complect__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
 
-                            </button>
-                            <div class="card__img"><img src="img/gun.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card_discount">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
 
-                            </button>
-                            <div class="card__img"><img src="img/glock.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
 
-                            </button>
-                            <div class="card__img"><img src="img/gun.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
+                                </button>
+                                <div class="card__img"><img src="img/gun.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a>
+                                </h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card_discount">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
-        
-                            </button>
-                            <div class="card__img"><img src="img/glock.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Glock 17 СХ Retay</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card_discount">
-                            <button class="card__btn card__btn-favorite" type="button">
+                        <div class="swiper-slide">
+                            <div class="card card_discount">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
 
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
-        
-                            </button>
-                            <div class="card__img"><img src="img/press.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Пресс RCBS Rock Chucker 
-                                Supreme</a></h3>
-                            <p class="card__type">Прессы</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
 
-                            </button>
-                            <div class="card__img"><img src="img/gun.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
 
-                            </button>
-                            <div class="card__img"><img src="img/gun.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
+                                </button>
+                                <div class="card__img"><img src="img/glock.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a>
+                                </h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card_discount">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
-        
-                            </button>
-                            <div class="card__img"><img src="img/glock.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Glock 17 СХ Retay</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
 
-                            </button>
-                            <div class="card__img"><img src="img/gun.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card_discount">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
-        
-                            </button>
-                            <div class="card__img"><img src="img/glock.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Glock 17 СХ Retay</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
 
-                            </button>
-                            <div class="card__img"><img src="img/gun.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card_discount">
-                            <button class="card__btn card__btn-favorite" type="button">
-                            </button>
-                            <button class="card__btn card__btn-basket" type="button">
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
 
-                            </button>
-                            <div class="card__img"><img src="img/glock.png" alt=""></div>
-                            <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a></h3>
-                            <p class="card__type">Охолощенное оружие и макеты</p>
-                            <div class="card__prices">
-                                <p class="card__price">38 800 руб.</p>
-                                <p class="card__price card__price_old">38 800 руб.</p>
-                                <p class="card__price card__price_new">15 900 руб.</p>
+                                </button>
+                                <div class="card__img"><img src="img/gun.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a>
+                                </h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card_discount">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/glock.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Glock 17 СХ
+                                        Retay</a></h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card_discount">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/press.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Пресс RCBS Rock
+                                        Chucker
+                                        Supreme</a></h3>
+                                <p class="card__type">Прессы</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/gun.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a>
+                                </h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/gun.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a>
+                                </h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card_discount">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/glock.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Glock 17 СХ
+                                        Retay</a></h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/gun.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a>
+                                </h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card_discount">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/glock.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Glock 17 СХ
+                                        Retay</a></h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/gun.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a>
+                                </h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card_discount">
+                                <button class="card__btn card__btn-favorite" type="button">
+                                    <svg class="icon-not-filed" width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.6272 23.5142C18.8912 23.5142 19.1523 23.4324 19.3752 23.2712C19.7903 22.9713 19.9842 22.4542 19.8712 21.9543L18.3273 15.1541L23.5635 10.5619C23.9484 10.225 24.0954 9.69397 23.9374 9.20689C23.7794 8.72092 23.3494 8.37594 22.8404 8.32888L15.9111 7.6999L13.1731 1.28975C12.9711 0.818795 12.5111 0.514648 12.0001 0.514648C11.489 0.514648 11.029 0.818795 10.8271 1.28866L8.08901 7.6999L1.16084 8.32888C0.650698 8.37484 0.220755 8.72 0.0627308 9.20598C-0.095293 9.69287 0.0508289 10.225 0.436825 10.561L5.67195 15.1521L4.12796 21.9523C4.0148 22.4524 4.2089 22.9693 4.62383 23.2692C5.03692 23.5682 5.5879 23.5933 6.02499 23.3313L12.0001 19.7612L17.9742 23.3333C18.1762 23.4543 18.4012 23.5142 18.6272 23.5142ZM12.0001 18.2232C11.773 18.2232 11.5481 18.2842 11.346 18.4042L5.70784 21.7763L7.16503 15.357C7.26904 14.8991 7.11394 14.423 6.76091 14.1141L1.81674 9.77692L8.35799 9.18291C8.82694 9.14097 9.23308 8.84598 9.4171 8.41091L12.0001 2.36168L14.5852 8.41183C14.7681 8.84488 15.1741 9.13988 15.6441 9.18199L22.1843 9.776L17.2403 14.113C16.8862 14.4221 16.7322 14.8991 16.8362 15.357L18.2932 21.7763L12.655 18.4042C12.4522 18.2842 12.2271 18.2232 12.0001 18.2232ZM8.0359 7.82185V7.82295C8.0359 7.82295 8.0359 7.82295 8.0359 7.82185Z" />
+                                    </svg>
+
+                                    <svg class="icon-filled" width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.582054 8.32786C0.732021 7.86276 1.14402 7.53389 1.63201 7.48885L8.25822 6.88678L10.8783 0.753682C11.0713 0.304695 11.5114 0.0146484 12.0003 0.0146484C12.4894 0.0146484 12.9294 0.305611 13.1224 0.755696L15.7423 6.88788L22.3696 7.48976C22.8565 7.53389 23.2685 7.86276 23.4187 8.32786C23.5695 8.79296 23.4296 9.30182 23.0616 9.62391L18.0524 14.016L19.5296 20.5212C19.6374 20.9993 19.4516 21.4931 19.0544 21.7812C18.8425 21.9372 18.5915 22.0152 18.3405 22.0152C18.1235 22.0152 17.9074 21.9573 17.7144 21.8412L12.0003 18.4242L6.28722 21.8403C5.86918 22.0912 5.34219 22.0692 4.94612 21.7823C4.54914 21.4942 4.3631 21.0002 4.47113 20.5221L5.9481 14.0171L0.938936 9.62483C0.571068 9.30292 0.430986 8.79387 0.582054 8.32786Z"
+                                            fill="#FFA621" />
+                                    </svg>
+
+                                </button>
+                                <button class="card__btn card__btn-basket" type="button">
+
+                                </button>
+                                <div class="card__img"><img src="img/glock.png" alt=""></div>
+                                <h3 class="title card__title title_size_16"><a href="#" class="link">Lorem ipsum</a>
+                                </h3>
+                                <p class="card__type">Охолощенное оружие и макеты</p>
+                                <div class="card__prices">
+                                    <p class="card__price">38 800 руб.</p>
+                                    <p class="card__price card__price_old">38 800 руб.</p>
+                                    <p class="card__price card__price_new">15 900 руб.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="complect__slider-pagination"></div>
                 </div>
-                <div class="complect__slider-pagination"></div>
+                <button class="complect__slider-btn complect__slider-btn_prev"><svg width="9" height="16"
+                        viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.68405 8L8.28093 12.5969C8.86672 13.1827 8.86672 14.1324 8.28093 14.7182C7.69514 15.304 6.7454 15.304 6.15961 14.7182L0.502756 9.06135C0.209629 8.76822 0.063182 8.38396 0.0634164 7.99977C0.0632997 7.61573 0.209746 7.23166 0.502756 6.93865L6.15961 1.2818C6.7454 0.696009 7.69514 0.69601 8.28093 1.2818C8.86672 1.86758 8.86672 2.81733 8.28093 3.40312L3.68405 8Z"
+                            fill="#C7C7C7" />
+                    </svg>
+                </button>
+                <button class="complect__slider-btn complect__slider-btn_next"><svg width="9" height="16"
+                        viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.31595 8L0.719069 3.40312C0.133283 2.81733 0.133283 1.86758 0.71907 1.2818C1.30486 0.696009 2.2546 0.696009 2.84039 1.2818L8.49724 6.93865C8.79037 7.23178 8.93682 7.61604 8.93658 8.00023C8.9367 8.38427 8.79025 8.76834 8.49724 9.06135L2.84039 14.7182C2.2546 15.304 1.30485 15.304 0.719069 14.7182C0.133282 14.1324 0.133282 13.1827 0.719069 12.5969L5.31595 8Z"
+                            fill="#C7C7C7" />
+                    </svg>
+                </button>
             </div>
-            <button class="complect__slider-btn complect__slider-btn_prev"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.68405 8L8.28093 12.5969C8.86672 13.1827 8.86672 14.1324 8.28093 14.7182C7.69514 15.304 6.7454 15.304 6.15961 14.7182L0.502756 9.06135C0.209629 8.76822 0.063182 8.38396 0.0634164 7.99977C0.0632997 7.61573 0.209746 7.23166 0.502756 6.93865L6.15961 1.2818C6.7454 0.696009 7.69514 0.69601 8.28093 1.2818C8.86672 1.86758 8.86672 2.81733 8.28093 3.40312L3.68405 8Z" fill="#C7C7C7"/>
-                </svg>
-                </button>
-            <button class="complect__slider-btn complect__slider-btn_next"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.31595 8L0.719069 3.40312C0.133283 2.81733 0.133283 1.86758 0.71907 1.2818C1.30486 0.696009 2.2546 0.696009 2.84039 1.2818L8.49724 6.93865C8.79037 7.23178 8.93682 7.61604 8.93658 8.00023C8.9367 8.38427 8.79025 8.76834 8.49724 9.06135L2.84039 14.7182C2.2546 15.304 1.30485 15.304 0.719069 14.7182C0.133282 14.1324 0.133282 13.1827 0.719069 12.5969L5.31595 8Z" fill="#C7C7C7"/>
-                </svg>
-                </button>
-        </div>
         </div>
     </section>
 
@@ -661,8 +847,11 @@
             <p class="description__text">Новодельный образец пистолета <span>Беретта В92-СО СХП.</span>
                 Есть <span>режим АВТО-ОГНЯ!</span> <br>
                 Выполнен из <span>силумина, стали и пластика.</span></p>
-                <div class="description__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JtAuKbbBg-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="description__video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JtAuKbbBg-Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -686,7 +875,8 @@
                             18 марта 2020
                         </div>
                     </div>
-                    <p class="feedback__text">Протопланетное облако, согласно третьему закону Ньютона, параллельно. Мантия позволяет пренебречь колебанями корпуса, хотя это в любом случае требует азимут.</p>
+                    <p class="feedback__text">Протопланетное облако, согласно третьему закону Ньютона, параллельно.
+                        Мантия позволяет пренебречь колебанями корпуса, хотя это в любом случае требует азимут.</p>
                 </li>
                 <li class="feedback__item">
                     <div class="feedback__item-header">
@@ -704,7 +894,8 @@
                             20 декабря 2019
                         </div>
                     </div>
-                    <p class="feedback__text">Протопланетное облако, согласно третьему закону Ньютона, параллельно. Мантия позволяет пренебречь колебанями корпуса, хотя это в любом случае требует азимут.</p>
+                    <p class="feedback__text">Протопланетное облако, согласно третьему закону Ньютона, параллельно.
+                        Мантия позволяет пренебречь колебанями корпуса, хотя это в любом случае требует азимут.</p>
                 </li>
             </ul>
         </div>
@@ -719,7 +910,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer class="footer">
         <div class="container">
             <div class="footer__blocks">
@@ -817,10 +1008,12 @@
                 </div>
                 <div class="footer__block">
                     <h2 class="title footer__title title_size_16">Адреса магазинов в Москве</h2>
-                    <a href="#" class="footer__address">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis soluta
+                    <a href="#" class="footer__address">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Facilis soluta
                         natus modi tenetur assumenda</a>
                     <p class="footer__time">Ежедневно с 10:00 до 21:00</p>
-                    <a href="#" class="footer__address">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis soluta
+                    <a href="#" class="footer__address">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Facilis soluta
                         natus modi tenetur assumenda</a>
                     <p class="footer__time">По выходным с 11:00 до 15:00 </p>
                 </div>
@@ -828,7 +1021,7 @@
             <div class="footer__bottom">
                 <p class="footer__copyright">© 2010-2020 «Lorem ipsum. Все права защищены.</p>
                 <p class="footer__disclaimer">ВНИМАНИЕ! Данный сайт не является коммерческим и вся продукция в ней
-                    ненастоящая. И все совпадения случайны. Сайт создан сугубо в личных целях</p>
+                    ненастоящая. Все совпадения случайны. Сайт создан сугубо в учебных целях</p>
             </div>
         </div>
     </footer>
@@ -849,7 +1042,8 @@
                 <label class="title modal__form-title title_size_14">ваше сообщение
                     <textarea name="message" class="modal__input modal__textarea"></textarea>
                 </label>
-                <p class="modal__alert">Отправляя форму, вы принимаете <a href="#">условия передачи информаци</a>  и <a href="#">политику конфиденциальности</a>.</p>
+                <p class="modal__alert">Отправляя форму, вы принимаете <a href="#">условия передачи информаци</a> и <a
+                        href="#">политику конфиденциальности</a>.</p>
                 <button class="btn modal__btn" type="submit">Отправить</button>
             </form>
         </div>

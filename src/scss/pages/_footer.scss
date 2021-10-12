@@ -42,34 +42,42 @@
         line-height: 24px;
         color: #000000;
         margin-bottom: 8px;
+
         &:hover {
             text-decoration: underline;
         }
     }
+
     &__time {
         font-size: 14px;
-line-height: 27px;
-color: rgba(0, 0, 0, 0.6);
-margin-bottom: 30px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 30px;
     }
+
     &__address {
         max-width: 273px;
         font-weight: 500;
         line-height: 24px;
         color: #000;
         margin-bottom: 8px;
+
         &:hover {
             text-decoration: underline;
         }
     }
+
     &__bottom {
         display: flex;
         justify-content: space-between;
     }
+
     &__copyright {
         align-self: flex-end;
+        padding-right: 15px;
         color: rgba(0, 0, 0, 0.6);
     }
+
     &__disclaimer {
         max-width: 300px;
         text-transform: uppercase;

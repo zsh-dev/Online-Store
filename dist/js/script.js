@@ -123,7 +123,8 @@ document.addEventListener('click', ({target}) => {
   if (document.querySelector('.products__sort-form')) {
     if (target.classList.contains('products__sort-btn')) {
       document.querySelector('.products__sort-items').classList.toggle('active');
-    } else if (!target.classList.contains('products__sort-btn')) {
+    } 
+    else if (!target.closest('.products__sort-items')) {
       document.querySelector('.products__sort-items').classList.remove('active');
     }
   }
@@ -138,7 +139,7 @@ const overlay = document.querySelector('.overlay');
 
 const burgerBtn = document.querySelector('.burger'),
   btnCloseMenu = document.querySelector('.btn-close[data-close-menu]'),
-  mobileMenu = document.querySelector('.header__mobile')
+  mobileMenu = document.querySelector('.header-mobile')
 if (burgerBtn) {
   burgerBtn.addEventListener('click', () => {
     mobileMenu.classList.add('active')
@@ -154,9 +155,9 @@ if (btnCloseMenu) {
   })
 }
 
-const mobileCatalogBtn = document.querySelectorAll('.header__mobile-btn'),
-  mobileMenuContent = document.querySelector('.header__mobile-first'),
-  mobileCatalog = document.querySelector('.header__mobile-catalog');
+const mobileCatalogBtn = document.querySelectorAll('.header-mobile__btn'),
+  mobileMenuContent = document.querySelector('.header-mobile__first'),
+  mobileCatalog = document.querySelector('.header-mobile__catalog');
 if (mobileCatalogBtn) {
   mobileCatalogBtn.forEach((item) => {
     item.addEventListener('click', () => {
@@ -173,39 +174,28 @@ if (mobileCatalogBtn) {
 const cardBtns = document.querySelectorAll('.card__btn');
 if (cardBtns) {
   cardBtns.forEach((item) => {
-    item.addEventListener('click', ({
-      target
-    }) => {
-      target.classList.toggle('active');
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
     })
   })
 }
 
 
 
-const sortRadioBtns = document.querySelectorAll('.radio-btn'),
+const sortRadioInputs = document.querySelectorAll('.radio__input'),
   sortBtn = document.querySelector('.products__sort-btn');
-if (sortRadioBtns) {
-  sortRadioBtns.forEach((item) => {
-    if (item.firstElementChild.checked) {
-      item.classList.add('active');
-      sortBtn.textContent = item.textContent;
-    } else if (!item.firstElementChild.checked) {
-      item.classList.remove('active');
-    }
 
-    item.addEventListener('click', ({
-      target
-    }) => {
-      sortRadioBtns.forEach(el => {
-        el.classList.remove('active');
-      });
+sortRadioInputs.forEach((item) => {
+  let inputValue = item.previousElementSibling.textContent;
+ if (item.checked) {
+  sortBtn.textContent = inputValue;
+ }
 
-      item.classList.add('active');
-      sortBtn.textContent = item.textContent;
-    })
-  })
-}
+item.addEventListener('click', () => {
+  sortBtn.textContent = inputValue;
+})
+  
+})
 
 
 
@@ -254,26 +244,6 @@ if (inputs) {
 
   });
 }
-
-
-const checkbox = document.querySelectorAll('.checkbox-btn');
-if (checkbox) {
-  checkbox.forEach((item) => {
-    if (item.firstElementChild.checked) {
-      item.classList.add('active');
-    } else if (!item.firstElementChild.checked) {
-      item.classList.remove('active');
-    }
-    item.addEventListener('click', ({
-      target
-    }) => {
-      target.classList.toggle('active');
-    })
-  })
-}
-
-
-
 
 
 const filterClose = document.querySelectorAll('[data-close]'),

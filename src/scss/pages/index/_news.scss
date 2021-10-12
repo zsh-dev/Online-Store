@@ -6,18 +6,9 @@
     }
 
     &__cards {
-        display: flex;
-    }
-
-    &__card {
-        flex-basis: 33.333%;
-
-        margin-right: 24px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+        gap: 24px;
     }
 
 }

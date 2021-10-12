@@ -5,16 +5,9 @@
             margin-right: 10px;
         }
 
-        &__contact-wrap {
-            margin-right: 10px;
-        }
         &__contact {
             font-size: 18px;
             line-height: 22px;
-        }
-
-        &__form {
-            width: 40%;
         }
 
         &__socials {
@@ -22,8 +15,27 @@
         }
 
         &__profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             &-link {
-                margin-right: 10px;
+                margin-right: 0;
+            }
+
+            &-link:first-child {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .search-form {
+        &__btn {
+            font-size: 0;
+            padding: 0 22px;
+
+            &::before {
+                left: 10px;
             }
         }
     }
@@ -172,10 +184,10 @@
             margin-bottom: 0;
         }
 
-        &__mobile {
+        &-mobile {
             display: block;
 
-       
+
 
             .header__profile,
             .header__footer,
@@ -188,11 +200,11 @@
                 display: flex;
             }
 
-            &-form {
+            &__form {
                 width: 100%;
             }
 
-            &-link {
+            &__link {
                 font-size: 16px;
                 line-height: 19px;
             }
@@ -268,22 +280,8 @@
         }
     }
 
-    .news {
-        &__cards {
-            flex-wrap: wrap;
-        }
-
-        &__card {
-            flex-basis: 46%;
-            margin-bottom: 10px;
-
-        }
-    }
 
     .news-card {
-        &__img {
-            height: auto;
-        }
 
         &__title {
             font-size: 16px;
@@ -302,7 +300,7 @@
         }
 
         &__list {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -471,6 +469,10 @@
             font-size: 0;
         }
 
+        &__link-item {
+            margin-right: 0;
+        }
+
     }
 
     .banner {
@@ -490,9 +492,10 @@
 
 
 
-    .news {
-        &__card {
-            margin-right: 20px;
+    .advantages {
+
+        &__list {
+            grid-template-columns: 1fr;
         }
     }
 
@@ -582,37 +585,34 @@
         }
 
         &__link-item {
-            margin-right: 0;
+            position: relative;
+            justify-content: center;
             width: 38px;
             height: 38px;
             padding: 0;
 
-            &::before {
-                left: 50%;
-                transform: translate(-50%, -50%);
+            svg {
+                margin-right: 0;
             }
         }
 
         &__link-count {
-            display: none;
+            position: absolute;
+            top: -10px;
+            right: -3px;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 3px 4px 2px;
         }
 
-        &__form-btn {
-            font-size: 0;
-            padding-left: 35px;
-        }
+        &-mobile {
 
-
-
-
-        &__mobile {
-         
 
             .header__contact-wrap {
                 margin-bottom: 30px;
             }
 
-            &-footer {
+            &__footer {
                 padding-top: 25px;
                 flex-direction: column;
                 align-items: stretch;
@@ -670,16 +670,8 @@
     }
 
     .news {
-        &__card {
-            flex-basis: 100%;
-            margin-right: 0;
-            margin-bottom: 30px;
-        }
-    }
-
-    .news-card {
-        &__img {
-            height: auto;
+        &__cards {
+            grid-template-columns: 1fr;
         }
     }
 
@@ -725,11 +717,7 @@
 
 
 
-        &__pagination {
-            &-link {
-                padding: 12px 14px;
-            }
-        }
+
     }
 
     .filter {
@@ -740,14 +728,24 @@
                 width: 45%;
             }
         }
-
-        &__btn-usage {
-            margin-right: 15px;
-            line-height: 19px;
+        &__btns {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        &__btn {
+            width: 100%;
         }
 
+
         &__btn-reset {
+            margin-top: 15px;
             padding-right: 5px;
+        }
+    }
+
+    .pagination {
+        &__link {
+            padding: 12px 14px;
         }
     }
 
